@@ -1,6 +1,6 @@
 # Electron replay uploader for HeroesProfile.com
 
-This is a cross-platform replay uploader for [HeroesProfille.com](https://HeroesProfile.com/)
+This is a cross-platform replay uploader for [HeroesProfile.com](https://HeroesProfile.com/)
 Download the latest release for your platform from [here](https://github.com/idooo/hotsapi-electron-uploader/releases)
 
 ![Screenshot](https://github.com/idooo/hotsapi-electron-uploader/blob/master/assets/screenshot.png?raw=true)
