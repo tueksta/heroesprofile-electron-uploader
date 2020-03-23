@@ -4,13 +4,15 @@ const logger = require('winston');
 const Constants = require('./../constants');
 const packageInfo = require('../../package.json');
 
-const PREFIX = 'http://hotsapi.net/api/v1';
-const UPLOAD_ENDPOINT = '/replays';
-const USER_AGENT = `HotsAPI Electron Uploader / version ${packageInfo.version} (https://github.com/idooo/hotsapi-electron-uploader)`;
+//const PREFIX = 'http://hotsapi.net/api/v1';
+const PREFIX = 'https://api.heroesprofile.com/api';
+
+const UPLOAD_ENDPOINT = '/upload';
+const USER_AGENT = `HeroesProfile Electron Uploader / version ${packageInfo.version} (https://github.com/Heroes-Profile/heroesprofile-electron-uploader)`;
 
 class API {
 	/**
-	 * Uploads replay to hotsapi.net and returns promise with replay object with new status
+	 * Uploads replay to heroesprofile.com and returns promise with replay object with new status
 	 *
 	 * @param {Object} replay
 	 * @returns {Promise<Object>}

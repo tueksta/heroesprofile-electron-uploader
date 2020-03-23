@@ -1,7 +1,7 @@
 # Electron replay uploader for HeroesProfile.com
 
 This is a cross-platform replay uploader for [HeroesProfile.com](https://HeroesProfile.com/)
-Download the latest release for your platform from [here](https://github.com/idooo/hotsapi-electron-uploader/releases)
+Download the latest release for your platform from [here](https://github.com/Heroes-Profile/heroesprofile-electron-uploader/releases)
 
 ![Screenshot](https://github.com/idooo/hotsapi-electron-uploader/blob/master/assets/screenshot.png?raw=true)
 
@@ -12,18 +12,19 @@ This application has been written in one day so there will be bugs.
 Please create an issue and attach application.log file.
 You can find that file here:
 
-Mac OS: `/Users/<you>/Library/Application Support/HotsApi Electron Replay Uploader/application.log`
+Mac OS: `/Users/<you>/Library/Application Support/HeroesProfile Electron Replay Uploader/application.log`
 
-Windows: `C:\Users\<you>\AppData\Local\HotsApi Electron Replay Uploader\application.log`
+Windows: `C:\Users\<you>\AppData\Local\HeroesProfile Electron Replay Uploader\application.log`
 
 I'll try to do my best to fix all possible issues
 
 ## Developing
 
-Install the latest node, checkout project and run npm:
+Navigate to the repository directory
 
 ```
-npm run start
+1: npm Install
+2: npm run start
 ```
 
 ## Build
@@ -34,19 +35,19 @@ Install `electron-packager` like this:
 npm install -g electron-packager
 ```
 
-Use it as they say in [readme](https://github.com/electron-userland/electron-packager) like: 
+Use it as they say in [readme](https://github.com/electron-userland/electron-packager) like:
 
 ```
 # mac
 electron-packager . --icon ./assets/icon.icns --platform darwin --arch x64
 # or for windows
 electron-packager . --icon ./assets/icon.png --platform win32 --arch x64
-``` 
+```
 
 # License
 
 MIT License
-  
+
 Copyright (c) 2017 Alex Shteinikov
 
 Permission is hereby granted, free of charge, to any person obtaining a copy

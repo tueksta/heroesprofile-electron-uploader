@@ -12,7 +12,7 @@ const discovery = new Discovery();
 const LOCAL_DATABASE_UPDATE_INTERVAL = 10 * 1000;
 
 logger.info('Application has been started');
-angular.module('hotsapiReplayUploader', []).controller('app', pageController);
+angular.module('heroesProfileReplayUploader', []).controller('app', pageController);
 
 function pageController($scope, $interval) {
 	// Here we will keep our DTOs for replays
