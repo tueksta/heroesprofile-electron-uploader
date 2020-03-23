@@ -7,8 +7,8 @@
     "start": "electron .",
     "osx": "electron-packager . --icon ./assets/icon.icns --platform darwin --arch x64"
   },
-  "repository": "git@github.com:idooo/heroesprofile-electron-uploader.git",
-  "author": "idooo <alex.shteinikov@gmail.com>",
+  "repository": "git@github.com:Heroes-Profile/heroesprofile-electron-uploader.git",
+  "author": "Heroes-Profile <zemill@heroesprofile.com>",
   "license": "MIT",
   "dependencies": {
     "angular": "^1.6.6",
@@ -19,6 +19,7 @@
     "winston": "^2.3.1"
   },
   "devDependencies": {
+    "electron-packager": "^14.2.1",
     "prettier": "^1.7.0"
   }
 }
