@@ -87,6 +87,8 @@ function pageController($scope, $interval) {
 	};
 
 	// Get replays data from local database, and create DTOs to show it in UI
+
+
 	discovery.getReplays().then(replays => {
 		Object.keys(replays).forEach(replayKey => {
 			replays[replayKey].fromNow = moment(
@@ -94,7 +96,6 @@ function pageController($scope, $interval) {
 			).fromNow();
 			this.replays.push(replays[replayKey]);
 		});
-		this.replays = this.replays.sort((a, b) => b.creationTime - a.creationTime);
 
 		this.updateStats();
 

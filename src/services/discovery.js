@@ -17,6 +17,9 @@ class Discovery {
 		const database = await Storage.getLocalDatabase();
 		const localReplays = this.getLocalReplays();
 
+
+		localReplays.sort((a, b) => a.modifiedTime - b.modifiedTime);
+
 		localReplays.forEach(localReplay => {
 			if (database.replays[localReplay.cacheName]) return;
 			database.replays[localReplay.cacheName] = Object.assign({}, localReplay, {
@@ -25,6 +28,7 @@ class Discovery {
 		});
 
 		await Storage.saveLocalDatabase(database.replays);
+
 
 		return database.replays;
 	}
@@ -59,6 +63,7 @@ class Discovery {
 						fullPath: path.join(directory, file),
 						fileName: file,
 						creationTime: stats.ctime.getTime(),
+						modifiedTime: stats.mtime.getTime(),
 						cacheName: directory.replace(/\D/g, '') + file
 					});
 		}, []);

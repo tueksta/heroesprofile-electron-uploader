@@ -17,7 +17,7 @@
             </tr>
         </thead>
         <tbody>
-            <tr ng-repeat="replay in $ctrl.replays track by replay.cacheName"
+            <tr ng-repeat="replay in $ctrl.replays.slice().reverse() track by replay.cacheName"
 				class="replay-table__row replay-table__row--{{replay.status}}">
                 <td>{{replay.fileName}}</td>
 				<td>{{replay.fromNow}}</td>
