@@ -7,7 +7,7 @@ const packageInfo = require('../../package.json');
 //const PREFIX = 'http://hotsapi.net/api/v1';
 const PREFIX = 'https://api.heroesprofile.com/api';
 
-const UPLOAD_ENDPOINT = '/upload';
+const UPLOAD_ENDPOINT = '/upload/heroesprofile/electron';
 const USER_AGENT = `HeroesProfile Electron Uploader / version ${packageInfo.version} (https://github.com/Heroes-Profile/heroesprofile-electron-uploader)`;
 
 class API {
